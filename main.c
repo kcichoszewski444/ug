@@ -3,7 +3,7 @@
 
 int main()
 {
-   z7();
+   z11();
 }
 
 int z1()
@@ -141,6 +141,17 @@ int z8()
 
 int z9()
 {
+    int a1, a2, b1, b2;
+    printf("Podaj pierwszą liczbę z pierwszej pary: ");
+    scanf("%i", &a1);
+    printf("Podaj drugą liczbę z pierwszej pary: ");
+    scanf("%i", &a2);
+
+    printf("Podaj pierwszą liczbę z drugiej pary: ");
+    scanf("%i", &b1);
+    printf("Podaj drugą liczbę z drugiej pary: ");
+    scanf("%i", &b2);
+
 
 }
 
@@ -166,7 +177,7 @@ int z10()
         }
     }
 
-    if(b>c && b>a)
+    else if(b>c && b>a)
     {
         if((a+c)<b)
         {
@@ -178,7 +189,7 @@ int z10()
         }
     }
 
-    if(c>b && c>a)
+    else if(c>b && c>a)
     {
         if((a+b)<c)
         {
@@ -188,5 +199,62 @@ int z10()
         {
             printf("Z odcinków nie można utworzyć trójkąta");
         }
+    }
+    else
+    {
+        printf("Z odcinków nie można utworzyć trójkąta");
+    }
+}
+
+int z11()
+{
+    int a, b, c;
+    int a2 = a*a;
+    int b2 = b*b;
+    int c2 = c*c;
+
+    printf("Podaj odcinek nr1: ");
+    scanf("%i", &a);
+    printf("Podaj odcinek nr2: ");
+    scanf("%i", &b);
+    printf("Podaj odcinek nr3: ");
+    scanf("%i", &c);
+
+    if((c>a) && (c>b))
+    {
+        if(c2=a2+b2)
+        {
+            printf("Trójkąt jest prostokątny");
+        }
+        else
+        {
+            printf("Trójkąt nie jest prostokątny");
+        }
+    }
+    else if((b>a) && (b>c))
+    {
+        if(b2=a2+c2)
+        {
+            printf("Trójkąt jest prostokątny");
+        }
+        else
+        {
+            printf("Trójkąt nie jest prostokątny");
+        }
+    }
+    else if((a>b) && (a>c))
+    {
+        if(a2=b2+c2)
+        {
+            printf("Trójkąt jest prostokątny");
+        }
+        else
+        {
+            printf("Trójkąt nie jest prostokątny");
+        }
+    }
+    else
+    {
+        printf("Trójkąt nie jest prostokątny");
     }
 }

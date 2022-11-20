@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int zadania2()
+{
+   z1();
+}
+
+int z1()
+{
+    int n, sum;
+    printf("Podaj liczbę: ");
+    scanf("%i", &n);
+
+    for (int i = 1; i <= n; i++)
+    {
+        int kw = 0;
+        kw = i*i;
+        sum += kw;
+    }
+    printf("%i",sum);
+}

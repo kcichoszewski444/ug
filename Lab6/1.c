@@ -17,7 +17,6 @@ int main()
  
     printf("Podaj liczbę: ");
     scanf("%i",&n);
-    silnia(n);
     printf("n = %i",silnia(n));
     return 0;
 }
